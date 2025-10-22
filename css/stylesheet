@@ -1,0 +1,168 @@
+:root{
+  --basicgrey: #bebebe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container{
+  display: grid;
+     grid-template-areas: "header" 
+                            "hero" 
+                            "main" 
+                            "aside" 
+                            "footer";
+
+}
+body{
+  margin:0.5rem;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem;
+}
+#global-header{
+  background-color: #ff0000;
+}
+
+hero{
+    background-image: url("https://picsum.photos/600/400?grayscale");
+    background-repeat: no-repeat;
+        background-size: cover;
+    background-position: bottom;
+    background-color:var(--basic-grey);
+    padding: 1rem;
+    position: relative;
+    min-height: 200px;
+}
+#myhero{
+  justify-content: space;
+}
+
+#mylogo{
+  font-size:30px;
+  color: #ffffff;
+  font-family: arial, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: none;
+}
+#mynavlist{
+  background-color:#ff0000;
+
+  color: #fff;
+  text-decoration: none;
+
+  ul {
+
+    li{
+      list-style: none;
+    }
+  }
+}
+
+aside{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #640b0b;
+}
+.semesterplan{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 300px;
+  height: 400px;
+  padding: 1rem color #2537af;
+  justify-content:center;
+}
+.this_section{
+  color:#fff;
+}
+
+
+.btn{
+  background-color: #000;
+  color:#fff;
+  background: #441b8f;
+  border-radius: 1rem;
+}
+
+.tekstsentrert{
+  text-align: center;
+  padding: 10px;
+}
+
+ol{
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+article{
+  padding: 20px;
+  background-color: #dadada;
+}
+
+table, th, td {
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+.side-container{
+  background-color: var(--basicgrey);
+  padding: 1rem;
+}
+
+
+footer{
+    background-color: #060914;
+    color: #fff;
+    padding: 1rem;
+    min-height: 150px;
+    /*grid-area:footer;*/
+    grid-column-start:1;
+    grid-column-end: 2;
+
+    grid-row-start:5;
+    grid-row-end:6;
+}
+#footernav{
+  display:flex;
+  justify-content: baseline;
+}
+.hover-btn:hover{
+  background-color: #0037ff;
+      padding:0;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+}
+
+/*@media only screen and (min-width:650px) {
+
+    #asideflex{
+      display:flex;
+      justify-content: baseline;
+    }*/
+
+@media only screen and (min-width: 600px){
+
+  #myhero{
+    min-height: 500px;
+  }
+
+  aside{
+  display:flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+}
