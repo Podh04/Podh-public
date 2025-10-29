@@ -22,6 +22,12 @@ body{
   background-color: #5e5e5e;
 }
 
+hero{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #392032;
+}
 
 
 hero{
