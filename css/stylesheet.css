@@ -52,26 +52,38 @@ picture{
 
 main{
   width:100%;
-  align-content: center;
+  height: 700px;
   text-align: center;
   padding: 10px;
-  background-color: #dadada;
+  background-color: #392032;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 
 ol{
+  height: 100%;
   list-style: none;
-  padding: 1rem;
-  gap: 5px;
+  justify-self: center;
+  width: 100%;
+
 }
 li{
-  border: 1px solid #000;
-  border-radius: 8px;
-  width: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  justify-self:center;
+  font-size: 30px;
+  background-color: #717171;
+  color: #000000;
+  margin: 0.5rem 0;
 }
-
+li:hover{
+  text-decoration: underline;
+  background-color: #838383;
+}
 table, th, td {
   border: 1px solid rgb(255, 255, 255);
   border-collapse: collapse;
