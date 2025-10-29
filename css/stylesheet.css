@@ -90,6 +90,10 @@ ol{
   margin: 1rem 0;
   flex-direction: column;
   align-content: center;
+  a{
+    color:#ffffff;
+    text-decoration: none;
+  }
 }
 .icon-liste{
   width: 75px;
@@ -100,6 +104,5 @@ ol{
   margin: 1rem 0;
 }
 li:hover{
-  text-decoration: underline;
   background-color: #c0c0c0;
 }
