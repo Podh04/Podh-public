@@ -60,33 +60,46 @@ main{
   align-items: center;
   justify-content: center;
   display: flex;
+  font-size: 30px;
+  h1{
+    color:#ffffff
+  }
 }
 
+section{
+  display: flex;
+}
 ol{
   height: 100%;
   list-style: none;
   justify-self: center;
   width: 100%;
+  margin: 0 0.25rem;
 
 }
-li{
+
+.lenke-liste{
   border: 1px solid #ffffff;
-  border-radius: 10px;
-  width: 200px;
-  height: 50px;
+  border-radius: 40px;
+  width: 400px;
+  height: 75px;
   justify-self:center;
-  font-size: 30px;
-  background-color: #717171;
+  font-size: 40px;
+  background-color: #878787;
   color: #000000;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  flex-direction: column;
+  align-content: center;
+}
+.icon-liste{
+  width: 75px;
+  height: 75px;
+  justify-self:center;
+  flex-direction: column;
+  align-content: center;
+  margin: 1rem 0;
 }
 li:hover{
   text-decoration: underline;
-  background-color: #838383;
-}
-table, th, td {
-  border: 1px solid rgb(255, 255, 255);
-  border-collapse: collapse;
-  padding: 5px;
-  text-align: left;
+  background-color: #c0c0c0;
 }
