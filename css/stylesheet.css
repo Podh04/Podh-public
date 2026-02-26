@@ -21,26 +21,26 @@ body{
   margin:0 rem;
   background-color: #5e5e5e;
 }
-
+/*
 hero{
   display: flex;
   width: 100%;
   justify-content: center;
   background-color: #392032;
 }
-
+*/
 
 hero{
   align-items: center;
   display: flex;
-    /*background-image: url("https://picsum.photos/600/400?grayscale");
+    background-image: url("../img/Podh_bg.jpg");
     background-repeat: no-repeat;
-        background-size: cover;
+    background-size: cover;
     background-position: bottom;
     background-color:var(--basic-grey);
     padding: 1rem;
     position: relative;
-    min-height: 500px;*/
+    min-height: 500px;
 }
 
 picture{
@@ -115,4 +115,23 @@ footer{
   border-top: 1px;
   border-color: #ffffff;
   margin-top: 1rem;
+  display: flex;
+  justify-content: baseline;
+}
+
+.album_info{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: 50%;
+}
+.album_info_box{
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  background-color: #5e8097;
+  padding:0.5rem;
+  margin: 0.5rem;
+}
+@media only screen and (min-width:600px){
+  
 }
