@@ -120,10 +120,12 @@ footer{
 }
 
 .album_info{
+  align-items: right;
   display: flex;
+  overflow-x: auto;  
   justify-content: center;
   flex-direction: row;
-  box-sizing: 50%;
+  box-sizing: 100% rem;
 }
 .album_info_box{
   border: 1px solid #ffffff;
